@@ -1,0 +1,60 @@
+{
+    "1": {
+        "predicate": ["ALL"],
+        "criteria": [{
+                "name": "from",
+                "value": [
+                    "contains",
+                    "account-security-noreply@accountprotection.microsoft.com"
+                ]
+            },
+            {
+                "name": "to",
+                "value": [
+                    "contains",
+                    "ritu.raj@maximl.com"
+                ]
+            },
+            {
+                "name": "subject",
+                "value": [
+                    "contains",
+                    "verify your email address"
+                ]
+            }
+        ],
+        "action": {
+            "addLabelIds": ["INBOX"],
+            "removeLabelIds": []
+        }
+    },
+    "2": {
+        "predicate": ["ANY"],
+        "criteria": [{
+                "name": "from",
+                "value": [
+                    "contains",
+                    "support@github.com"
+                ]
+            },
+            {
+                "name": "to",
+                "value": [
+                    "contains",
+                    "ritupycon2@gmail.com"
+                ]
+            },
+            {
+                "name": "subject",
+                "value": [
+                    "contains",
+                    "[GitHub] Thanks for verifying your email address"
+                ]
+            }
+        ],
+        "action": {
+            "addLabel": ["TRASH"],
+            "removeLabelIds": []
+        }
+    }
+}
